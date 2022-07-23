@@ -1,0 +1,6 @@
+<h1>新規投稿ページ</h1>
+<%= form_with url: "/posts", method: :post, local: true do |form| %>
+  <%= form.text_field :content %>
+  <%= form.submit '投稿する' %>
+<% end %>
+<!--"/posts"へフォームに記載した内容がリクエストとして送信される。method属性はフォームに記載した内容を送信する際のHTTPメソッド。POST：データを送信する-->
